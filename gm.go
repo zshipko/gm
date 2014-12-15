@@ -12,6 +12,9 @@ import (
 )
 
 // #cgo pkg-config: GraphicsMagick
+// #cgo openbsd LDFLAGS: -L/usr/X11R6/lib -lX11
+// #cgo linux LDFLAGS: -lX11
+// #cgo freebsd LDFLAGS: -lX11
 // #include <magick/api.h>
 // #include <string.h>
 /*
